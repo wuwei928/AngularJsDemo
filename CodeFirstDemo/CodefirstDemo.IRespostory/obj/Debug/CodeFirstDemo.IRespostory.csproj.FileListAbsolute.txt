@@ -1,0 +1,5 @@
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\CodeFirstDemo.IRespostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\CodeFirstDemo.IRespostory.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\obj\Debug\CodeFirstDemo.IRespostory.csprojResolveAssemblyReference.cache
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\obj\Debug\CodeFirstDemo.IRespostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\obj\Debug\CodeFirstDemo.IRespostory.pdb
