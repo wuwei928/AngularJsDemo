@@ -7,7 +7,7 @@
 <div ng-controller="userContrller">
     <div ng-view>
 
-        <button class="btn btn-default pull-right" ng-click="open()">Add user</button>
+        <button class="btn btn-default pull-right" ng-click="addUser()">Add user</button>
 
         <table class="table table-hover">
             <thead>
@@ -38,6 +38,38 @@
     </div>
     <div class="modal-body">
         <div class="row">
+        <form name="form">
+            <div class="form-group">
+                <label class="col-md-4 control-label">First name :</label>
+                <input type="text" ng-model="user.FirstName" required />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Last name :</label>
+                <input type="text" ng-model="user.LastName" required />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Email :</label>
+                <input type="email" ng-model="user.Email" placeholder="Email Address" required />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Age :</label>
+                <input type="number" ng-model="user.Age" />
+            </div>
+        </form>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">Save</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>    
+    </script>
+
+    <script type="text/ng-template" id="EditUserModal">
+    <div class="modal-header">
+        <h3 class="modal-title">Edit user</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
             <div class="form-group">
                 <label class="col-md-4 control-label">First name :</label>
                 <input type="text" ng-model="user.FirstName" />
@@ -62,29 +94,12 @@
     </div>    
     </script>
 
-    <script type="text/ng-template" id="EditUserModal">
+    <script type="text/ng-template" id="DeleteUserModal">
     <div class="modal-header">
-        <h3 class="modal-title">Add user</h3>
+        <h3 class="modal-title">Edit user</h3>
     </div>
     <div class="modal-body">
-        <div class="row">
-            <div class="form-group">
-                <label class="col-md-4 control-label">First name :</label>
-                <input type="text" ng-model="user.FirstName" />
-            </div>
-            <div class="form-group">
-                <label class="col-md-4 control-label">First name :</label>
-                <input type="text" ng-model="user.LastName" />
-            </div>
-            <div class="form-group">
-                <label class="col-md-4 control-label">Email :</label>
-                <input type="text" ng-model="user.Email" />
-            </div>
-            <div class="form-group">
-                <label class="col-md-4 control-label">Age :</label>
-                <input type="text" ng-model="user.Age" />
-            </div>
-        </div>
+        <p>Are you sure want to delete this user?</p>
     </div>
     <div class="modal-footer">
         <button class="btn btn-primary" ng-click="ok()">Save</button>

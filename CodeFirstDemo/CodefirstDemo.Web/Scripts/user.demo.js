@@ -8,7 +8,6 @@ demoUser.factory("userService", function ($http) {
             $http.get(url).success(callBack);
         },
         addUser: function (user, callBack) {
-
             $http.post(url, user).success(callBack);
         },
         updateUser: function (user, callBack) {
@@ -24,13 +23,22 @@ demoUser.controller("userContrller", function ($scope, $modal, userService) {
     getUser();
 
     $scope.deleteUser = function (user) {
-        userService.deleteUser(user.Id, function () {
-            var index = $scope.users.indexOf(user);
+        var deleteUser = $modal.open({
+            templateUrl: 'DeleteUserModal',
+            controller: DeleteUserModalInstanceCtrl,
+            backdrop: 'static',
+            resolve: {
+                user: function () { return user; }
+            }
+        });
+
+        deleteUser.result.then(function (returnUser) {
+            var index = $scope.users.indexOf(returnUser);
             $scope.users.splice(index, 1);
         });
     };
 
-    $scope.open = function (size) {
+    $scope.addUser = function (size) {
         var addUser = $modal.open({
             templateUrl: 'AddUserModal',
             controller: AddUserModalInstanceCtrl,
@@ -38,13 +46,13 @@ demoUser.controller("userContrller", function ($scope, $modal, userService) {
             backdrop: 'static'
         });
 
-        addUser.result.then(function (data) {
-            $scope.users.push(data);
+        addUser.result.then(function (returnUser) {
+            getUser();
         });
     };
 
     $scope.editUser = function (user) {
-        var editUser = $modal.open({
+        $modal.open({
             templateUrl: 'EditUserModal',
             controller: EditUserModalInstanceCtrl,
             backdrop: 'static',
@@ -53,8 +61,8 @@ demoUser.controller("userContrller", function ($scope, $modal, userService) {
             }
         });
 
-        editUser.result.then(function (data) {
-            var index = $scope.users.indexOf(data);
+        editUser.result.then(function (returnUser) {
+            var index = $scope.users.indexOf(returnUser);
             $scope.users[index] = data;
         });
     }
@@ -71,13 +79,8 @@ var AddUserModalInstanceCtrl = function ($scope, $modalInstance, userService) {
     $scope.user = {};
     $scope.ok = function () {
         userService.addUser($scope.user, function () {
-            if (!$scope.$$phase) {
-                $modalInstance.close($scope.user);
-            }
-            
+            $modalInstance.close();
         });
-
-        $modalInstance.close();
     };
 
     $scope.cancel = function () {
@@ -89,12 +92,20 @@ var EditUserModalInstanceCtrl = function ($scope, user, $modalInstance, userServ
     $scope.user = user;
     $scope.ok = function () {
         userService.updateUser($scope.user, function () {
-            if (!$scope.$$phase) {
-                $modalInstance.close($scope.user);
-            }
+            $modalInstance.close($scope.user);
         });
+    };
 
-        $modalInstance.close();
+    $scope.cancel = function () {
+        $modalInstance.dismiss('cancel');
+    };
+};
+
+var DeleteUserModalInstanceCtrl = function ($scope, user, $modalInstance, userService) {
+    $scope.ok = function () {
+        userService.deleteUser(user.Id, function () {
+            $modalInstance.close(user);
+        });
     };
 
     $scope.cancel = function () {
