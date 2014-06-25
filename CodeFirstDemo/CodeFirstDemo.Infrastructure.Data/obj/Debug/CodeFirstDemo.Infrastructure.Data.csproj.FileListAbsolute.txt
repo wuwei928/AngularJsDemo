@@ -1,0 +1,10 @@
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\bin\Debug\CodeFirstDemo.Infrastructure.Data.dll.config
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\bin\Debug\CodeFirstDemo.Infrastructure.Data.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\bin\Debug\CodeFirstDemo.Infrastructure.Data.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\bin\Debug\EntityFramework.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\bin\Debug\EntityFramework.xml
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\obj\Debug\CodeFirstDemo.Infrastructure.Data.csprojResolveAssemblyReference.cache
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\obj\Debug\CodeFirstDemo.Infrastructure.Data.Migrations.InitialCreate.resources
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\obj\Debug\CodeFirstDemo.Infrastructure.Data.csproj.GenerateResource.Cache
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\obj\Debug\CodeFirstDemo.Infrastructure.Data.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Infrastructure.Data\obj\Debug\CodeFirstDemo.Infrastructure.Data.pdb

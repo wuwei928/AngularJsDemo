@@ -1,0 +1,16 @@
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.Repostory.dll.config
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.Repostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.Repostory.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\Castle.Core.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\Castle.Windsor.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.Infrastructure.Data.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.IRepostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\EntityFramework.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.Infrastructure.Data.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\CodeFirstDemo.IRepostory.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\Castle.Core.xml
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\Castle.Windsor.xml
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\bin\Debug\EntityFramework.xml
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\obj\Debug\CodeFirstDemo.Repostory.csprojResolveAssemblyReference.cache
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\obj\Debug\CodeFirstDemo.Repostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodeFirstDemo.Respostory\obj\Debug\CodeFirstDemo.Repostory.pdb

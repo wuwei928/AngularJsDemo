@@ -1,0 +1,9 @@
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\CodeFirstDemo.IRepostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\CodeFirstDemo.IRepostory.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\CodeFirstDemo.Infrastructure.Data.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\EntityFramework.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\CodeFirstDemo.Infrastructure.Data.pdb
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\bin\Debug\EntityFramework.xml
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\obj\Debug\CodeFirstDemo.IRspostory.csprojResolveAssemblyReference.cache
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\obj\Debug\CodeFirstDemo.IRepostory.dll
+E:\TestProject\CodeFirstAndMigrations\CodeFirstDemo\CodefirstDemo.IRespostory\obj\Debug\CodeFirstDemo.IRepostory.pdb

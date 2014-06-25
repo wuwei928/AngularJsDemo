@@ -1,0 +1,94 @@
+﻿<!doctype html>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>JavaScript Projects</h2>
+<div ng-controller="userContrller">
+    <div ng-view>
+
+        <button class="btn btn-default pull-right" ng-click="open()">Add user</button>
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Full Name</th>
+                    <th>Email</th>
+                    <th>Age</th>
+                    <th>GroupName</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in users">
+                    <td ng-bind="user.FullName"></td>
+                    <td ng-bind="user.Email"></td>
+                    <td ng-bind="user.Age"></td>
+                    <td ng-bind="user.GroupName"></td>
+                    <td><a href="#" ng-click="editUser(user)">Edit</a>   <a href="#" ng-click="deleteUser(user)">Delete</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script type="text/ng-template" id="AddUserModal">
+    <div class="modal-header">
+        <h3 class="modal-title">Add user</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="form-group">
+                <label class="col-md-4 control-label">First name :</label>
+                <input type="text" ng-model="user.FirstName" />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">First name :</label>
+                <input type="text" ng-model="user.LastName" />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Email :</label>
+                <input type="text" ng-model="user.Email" />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Age :</label>
+                <input type="text" ng-model="user.Age" />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">Save</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>    
+    </script>
+
+    <script type="text/ng-template" id="EditUserModal">
+    <div class="modal-header">
+        <h3 class="modal-title">Add user</h3>
+    </div>
+    <div class="modal-body">
+        <div class="row">
+            <div class="form-group">
+                <label class="col-md-4 control-label">First name :</label>
+                <input type="text" ng-model="user.FirstName" />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">First name :</label>
+                <input type="text" ng-model="user.LastName" />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Email :</label>
+                <input type="text" ng-model="user.Email" />
+            </div>
+            <div class="form-group">
+                <label class="col-md-4 control-label">Age :</label>
+                <input type="text" ng-model="user.Age" />
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button class="btn btn-primary" ng-click="ok()">Save</button>
+        <button class="btn btn-warning" ng-click="cancel()">Cancel</button>
+    </div>    
+    </script>
+</div>
