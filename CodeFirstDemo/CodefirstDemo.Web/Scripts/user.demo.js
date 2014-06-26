@@ -57,7 +57,7 @@ demoUser.controller("userContrller", function ($scope, $modal, userService) {
             controller: EditUserModalInstanceCtrl,
             backdrop: 'static',
             resolve: {
-                user: function () { return user; }
+                user: function () { return angular.copy(user); }
             }
         });
 
@@ -73,7 +73,6 @@ demoUser.controller("userContrller", function ($scope, $modal, userService) {
         });
     }
 });
-
 
 var AddUserModalInstanceCtrl = function ($scope, $modalInstance, userService) {
     $scope.user = {};
